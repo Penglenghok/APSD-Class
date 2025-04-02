@@ -23,7 +23,6 @@ public class Main {
 
         // System.out.println("Sample Employee and PensionPlan data loaded.");
 
-
         // Feature 1: Print all employees (including PensionPlan details if any)
         System.out.println("All Employees (sorted by yearly salary descending and last name ascending):");
         List<Employee> sortedEmployees = employees.stream()
