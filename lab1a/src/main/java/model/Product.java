@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class Product {
 
-    String productId;
+    Long productId;
     String name;
     Date dateSupplied;
 
@@ -13,11 +13,11 @@ public class Product {
 
     double unitPrice;
 
-    public String getProductId() {
+    public Long getProductId() {
         return productId;
     }
 
-    public void setProductId(String productId) {
+    public void setProductId(Long productId) {
         this.productId = productId;
     }
 
@@ -57,7 +57,7 @@ public class Product {
 
 
     Product() {
-        this.productId = String.valueOf(Math.random());
+        this.productId = null;
         this.name = "";
         this.dateSupplied = new Date();
         this.quantityInStock = 0;
@@ -65,14 +65,14 @@ public class Product {
     }
 
     Product(String name, int quantityInStock, double unitPrice) {
-        this.productId = String.valueOf(Math.random());
+        this.productId = null;
         this.name = name;
         this.dateSupplied = new Date();
         this.quantityInStock = quantityInStock;
         this.unitPrice = unitPrice;
     }
 
-    public Product(String productId, String name, Date dateSupplied, int quantityInStock, double unitPrice) {
+    public Product(Long productId, String name, Date dateSupplied, int quantityInStock, double unitPrice) {
         this.productId = productId;
         this.name = name;
         this.dateSupplied = dateSupplied;
