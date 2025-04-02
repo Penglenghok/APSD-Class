@@ -1,19 +1,19 @@
-name: CI for lab2a
+name: CI for lab1b
 
 on:
   push:
     paths:
-      - 'lab2a/**'
+      - 'lab1b/**'
   pull_request:
     paths:
-      - 'lab2a/**'
+      - 'lab1b/**'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: lab2a
+        working-directory: lab1b
     steps:
       - uses: actions/checkout@v3
       - name: Set up JDK 11
